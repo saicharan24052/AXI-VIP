@@ -60,6 +60,36 @@ axi_vip/
 - AXI4 Protocol
 - SystemVerilog Assertions (SVA)
 - QuestaSim and Visualizer™ Debug Environment 
+---
+
+
+## Simulation
+
+### Prerequisites
+
+- Siemens QuestaSim / ModelSim with SystemVerilog and UVM support.
+
+### Running the Simulation
+
+1. Download or clone the repository.
+2. Place all project files in a single working directory.
+3. Open the project folder.
+4. Start the simulation by **double-clicking the provided `.do` file**.
+5. The script will automatically:
+   - Create the required simulation library.
+   - Compile all source files.
+   - Elaborate the testbench.
+   - Launch the simulation.
+   - Load the waveform configuration (if available).
+
+> **Note:** Ensure that the simulator executable is properly configured in your system environment so that the `.do` file is associated with QuestaSim/ModelSim.
+
+
+
+
+
+
+
 
 
 ---
