@@ -67,7 +67,8 @@ axi_vip/
 
 ### Prerequisites
 
-- Siemens QuestaSim / ModelSim with SystemVerilog and UVM support.
+- Siemens **QuestaSim** with SystemVerilog and UVM support.
+- Siemens **Visualizer™ Debug Environment**
 
 ### Running the Simulation
 
@@ -77,18 +78,10 @@ axi_vip/
 4. Start the simulation by **double-clicking the provided `.do` file**.
 5. The script will automatically:
    - Create the required simulation library.
-   - Compile all source files.
-   - Elaborate the testbench.
-   - Launch the simulation.
-   - Load the waveform configuration (if available).
+   - Compile all source files and optimize.
+   - Launch the simulation in Visualizer™ Debug Environment.
 
-> **Note:** Ensure that the simulator executable is properly configured in your system environment so that the `.do` file is associated with QuestaSim/ModelSim.
-
-
-
-
-
-
+> **Note:** The provided `.do` file is configured for the **Visualizer™ Debug Environment**. To run the project using **QuestaSim only**, minor modifications to the simulation script may be required.
 
 
 
