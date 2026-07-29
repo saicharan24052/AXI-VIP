@@ -21,7 +21,7 @@ A reusable **AXI4 Verification IP (VIP)** developed in **SystemVerilog** and **U
 
 ```
 axi_vip/
-├── rtl/                # AXI interface
+├── interface/          # AXI interface
 ├── master_agent/       # Master driver, monitor, sequencer
 ├── slave_agent/        # Slave driver, monitor, sequencer
 ├── sequence/           # AXI sequences
@@ -29,8 +29,7 @@ axi_vip/
 ├── env/                # UVM environment
 ├── test/               # UVM tests
 ├── scoreboard/         # Transaction comparison
-├── assertions/         # AXI protocol assertions
-└── tb/                 # Top-level testbench
+└── top/                # Top-level testbench
 ```
 
 ---
@@ -46,16 +45,9 @@ axi_vip/
 - AXI Transaction Class
 - Scoreboard
 - Interface-based Assertions
-
-### Planned
-- Functional Coverage
-- Memory Model
-- Outstanding Transaction Tracking
-- Channel-Level Transaction Reconstruction
-- AXI Protocol Reference Model
-- Error Injection
 - Random Backpressure
-- Validation with Real AXI RTL Designs
+- Channel-Level and Transaction-Level monitoring
+
 
 ---
 
@@ -65,27 +57,8 @@ axi_vip/
 - UVM
 - AXI4 Protocol
 - SystemVerilog Assertions (SVA)
-- QuestaSim / ModelSim
+- QuestaSim and Visualizer™ Debug Environment 
 
----
-
-## Getting Started
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/<username>/axi_vip.git
-```
-
-2. Compile the project using your simulator.
-
-3. Run the desired UVM test.
-
----
-
-## Future Goals
-
-This project aims to evolve into a near-commercial AXI4 Verification IP by incorporating advanced protocol checking, comprehensive functional coverage, configurable components, and interoperability testing with real AXI RTL implementations.
 
 ---
 
@@ -99,5 +72,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 **C. Sai Charan**
 
-M.Tech – VLSI & Embedded Systems  
-SystemVerilog | UVM | RTL Design | Design Verification
