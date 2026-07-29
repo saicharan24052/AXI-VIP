@@ -10,8 +10,8 @@ A reusable **AXI4 Verification IP (VIP)** developed in **SystemVerilog** and **U
 - AXI4 Slave UVM Agent
 - Configurable drivers, sequencers, and monitors
 - Common AXI transaction class
-- Transaction-level monitoring
-- Scoreboard for Master–Slave transaction comparison
+- Transaction-level and Channel-Level monitoring
+- Scoreboard for Master–Slave data comparison
 - SystemVerilog Assertions (SVA) for protocol checking
 - Modular and reusable UVM architecture
 
