@@ -81,6 +81,11 @@ axi_vip/
    - Compile all source files and optimize.
    - Launch the simulation in Visualizer™ Debug Environment.
 
+| Script | Description |
+|---------|-------------|
+| `run.do` | Compiles and optimize the project, launches the simulation, and opens the design in the **Visualizer™ Debug Environment** for **live simulation and debugging**. |
+| `post_run.do` | Opens the **Visualizer™ Debug Environment** for **post-simulation debugging** |
+
 > **Note:** The provided `.do` file is configured for the **Visualizer™ Debug Environment**. To run the project using **QuestaSim only**, minor modifications to the simulation script may be required.
 
 
