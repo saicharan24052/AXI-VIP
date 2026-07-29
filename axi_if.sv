@@ -250,32 +250,7 @@ modport MASTER_DRV(clocking master_drv_cb, input ARESETn);
 modport MASTER_MON(clocking master_mon_cb, input ARESETn);
 modport SLAVE_DRV(clocking slave_drv_cb, input ARESETn);
 modport SLAVE_MON(clocking slave_mon_cb, input ARESETn);
-/*
-property awvalid;
-	@(posedge ACLK) //disable iff  (!ARESETn)
-		 $rose(AWVALID) |-> ($stable({AWADDR, AWID, AWLEN, AWSIZE, AWBURST})) until AWREADY [->1];
-endproperty
 
-property wvalid;
-	@(posedge ACLK) //disable iff  (!ARESETn)
-		$rose(WVALID) |-> ($stable({WDATA, WID, WSTRB, WLAST})) until WREADY [->1];
-endproperty 
-
-property bvalid;
-	@(posedge ACLK) //disable iff  (!ARESETn)
-		$rose(BVALID) |-> ($stable({BRESP, BID})) until BREADY [->1];
-endproperty
-
-property arvalid;
-	@(posedge ACLK) //disable iff  (!ARESETn)
-		$rose(ARVALID) |-> ($stable({ARADDR, ARID, ARLEN, ARSIZE, ARBURST})) until ARREADY [->1];
-endproperty
-
-property rvalid;
-	@(posedge ACLK) //disable iff  (!ARESETn)
-		$rose(RVALID) |-> ($stable({RDATA, RID, RRESP, RLAST})) until RREADY [->1];
-endproperty 
-*/
 
 property awvalid;
     @(posedge ACLK) disable iff  (!ARESETn)
