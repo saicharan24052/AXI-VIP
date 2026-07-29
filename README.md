@@ -32,11 +32,13 @@ axi_vip/
 └── top/                # Top-level testbench
 ```
 
----
+## Project Status
 
-## Current Status
+🚧 **Work in Progress**
 
-### Implemented
+Core AXI4 VIP components have been implemented and verified. The project is actively evolving towards a **near-commercial AXI4 Verification IP (VIP)**.
+
+### Current Implementation
 - Master Agent
 - Slave Agent
 - Driver
