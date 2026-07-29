@@ -36,7 +36,7 @@ axi_vip/
 
 🚧 **Work in Progress**
 
-Core AXI4 VIP components have been implemented and verified. The project is actively evolving towards a **near-commercial AXI4 Verification IP (VIP)**.
+**Currently in active development.** New features and enhancements are being added to evolve the project into a near-commercial AXI4 Verification IP.
 
 ### Current Implementation
 - Master Agent
